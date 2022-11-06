@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "union-find 알고리즘"
 tag: 
   - 알고리즘
