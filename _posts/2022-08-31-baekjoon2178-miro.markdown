@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Python] 백준문제풀이 - 2178번 미로탐색"
 tag: 
   - 백준 

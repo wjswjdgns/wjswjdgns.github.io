@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Python] 백준문제풀이 - 1260번 DFS 와 BFS"
 tag: 
   - 백준 

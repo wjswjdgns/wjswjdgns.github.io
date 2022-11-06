@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Python] 백준문제풀이 - 11725번 트리의 부모 찾기 "
 tag: 
   - 백준 
