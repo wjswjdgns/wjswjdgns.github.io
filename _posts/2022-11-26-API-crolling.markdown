@@ -76,6 +76,7 @@ for i in date:
         full_value.append(value)
 ```
 ### 데이터 프레임 만들기
+- pd.DataFrame( [2차원 리스트], [columns 리스트] ) 형식으로 데이터 프레임을 제작
 ```
 pd.DataFrame(full_value, columns=columns)
 ```
@@ -86,6 +87,9 @@ pd.DataFrame(full_value, columns=columns)
 <img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
 
 ### CSV 저장하기
+- 위에세 만든 데이터 프레임을 utf-8-sig 형태로 추출
+- 일반적인 utf-8으로는 한글 데이터가 깨짐으로 utf-8-sig 활용
+
 ```
 test.to_csv("apt.csv", mode='w', encoding='utf-8-sig')
 ```
