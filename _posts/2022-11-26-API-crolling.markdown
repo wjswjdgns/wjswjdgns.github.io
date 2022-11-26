@@ -88,12 +88,15 @@ for i in date:
 pd.DataFrame(full_value, columns=columns)
 ```
 **full_value**
+
 <img width="1083" alt="image" src="https://user-images.githubusercontent.com/55444587/204082649-a95b2966-997a-4038-9e82-0be0806b30a1.png">
 
 **columns**
+
 <img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
 
 <br>
+
 ### CSV 저장하기
 - 위에세 만든 데이터 프레임을 utf-8-sig 형태로 추출
 - 일반적인 utf-8으로는 한글 데이터가 깨짐으로 utf-8-sig 활용
