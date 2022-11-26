@@ -12,7 +12,6 @@ tag:
 - API : REST
 
 ## 크롤링 코드
-<br>
 
 ### API 연결
 ```
@@ -26,6 +25,9 @@ response = requests.get(url, params=params)
 - numofRows : 한페이지에 나오는 데이터의 수
 - LAWD_CD : 시군구코드
 - DEAL_YWD : 가져올 년도
+
+<br>
+
 ### 전체 데이터 가져오기
 ```
 content = response.text
@@ -35,6 +37,7 @@ rows = xml_obj.findAll('item') #item 기준으로 나누기
 <img width="983" alt="image" src="https://user-images.githubusercontent.com/55444587/204082558-e40ee5b8-2a59-46aa-abcb-6727fc763173.png">
 
 - 전체 데이터를 item 태그 기준으로 나누어 리스트에 저장
+
 <br>
 
 ### 컬럼 따로 뽑기
@@ -80,6 +83,7 @@ for i in date:
             value.append(val.text.lstrip())
         full_value.append(value)
 ```
+
 <br>
 
 ### 데이터 프레임 만들기
