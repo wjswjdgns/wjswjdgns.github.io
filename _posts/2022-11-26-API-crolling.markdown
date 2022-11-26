@@ -30,14 +30,17 @@ content = response.text
 xml_obj = bs4.BeautifulSoup(content,'lxml-xml')
 rows = xml_obj.findAll('item') #item 기준으로 나누기
 ```
-<그림 1 :  rows>
+<img width="983" alt="image" src="https://user-images.githubusercontent.com/55444587/204082558-e40ee5b8-2a59-46aa-abcb-6727fc763173.png">
+
 - 전체 데이터를 item 태그 기준으로 나누어 리스트에 저장
 ### 컬럼 따로 뽑기
 - 데이터 하나만 이용하여 컬럼을 따로 분리
 ```
 columns_list = rows[0].find_all()
 ```
-<그림 2 : columns_list >
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/55444587/204082578-bff63cbe-05bb-4bc2-82ac-15f1fd54b96e.png">
+
 
 - 반복문을 활용하여 columns 리스트에 컬럼 명을 넣는다.
 ```
@@ -45,8 +48,8 @@ columns = []
 for columns_value in columns_list:
     columns.append(columns_value.name)
 ```
+<img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
 
-<그림 3 : columns>
 
 ### 데이터 추출하기
 - date 라는 리스트안에 가져올 모든 데이터의 날짜를 넣는다.
@@ -77,11 +80,13 @@ for i in date:
 pd.DataFrame(full_value, columns=columns)
 ```
 **full_value**
-<그림 : full_value>
+<img width="1083" alt="image" src="https://user-images.githubusercontent.com/55444587/204082649-a95b2966-997a-4038-9e82-0be0806b30a1.png">
+
 **columns**
-<그림 : columns >
+<img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
+
 ### CSV 저장하기
 ```
 test.to_csv("apt.csv", mode='w', encoding='utf-8-sig')
 ```
-<그림 : csv 파일 >
+<img width="1410" alt="image" src="https://user-images.githubusercontent.com/55444587/204082673-197ebf15-6440-43cd-8e6d-52fb0b22086b.png">
