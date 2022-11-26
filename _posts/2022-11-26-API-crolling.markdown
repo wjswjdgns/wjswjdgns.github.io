@@ -12,6 +12,8 @@ tag:
 - API : REST
 
 ## 크롤링 코드
+<br>
+
 ### API 연결
 ```
 import requests
@@ -33,6 +35,8 @@ rows = xml_obj.findAll('item') #item 기준으로 나누기
 <img width="983" alt="image" src="https://user-images.githubusercontent.com/55444587/204082558-e40ee5b8-2a59-46aa-abcb-6727fc763173.png">
 
 - 전체 데이터를 item 태그 기준으로 나누어 리스트에 저장
+<br>
+
 ### 컬럼 따로 뽑기
 - 데이터 하나만 이용하여 컬럼을 따로 분리
 ```
@@ -50,6 +54,7 @@ for columns_value in columns_list:
 ```
 <img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
 
+<br>
 
 ### 데이터 추출하기
 - date 라는 리스트안에 가져올 모든 데이터의 날짜를 넣는다.
@@ -75,6 +80,8 @@ for i in date:
             value.append(val.text.lstrip())
         full_value.append(value)
 ```
+<br>
+
 ### 데이터 프레임 만들기
 - pd.DataFrame( [2차원 리스트], [columns 리스트] ) 형식으로 데이터 프레임을 제작
 ```
@@ -86,6 +93,7 @@ pd.DataFrame(full_value, columns=columns)
 **columns**
 <img width="985" alt="image" src="https://user-images.githubusercontent.com/55444587/204082612-d66be993-b744-43f9-83d3-b56f1e205288.png">
 
+<br>
 ### CSV 저장하기
 - 위에세 만든 데이터 프레임을 utf-8-sig 형태로 추출
 - 일반적인 utf-8으로는 한글 데이터가 깨짐으로 utf-8-sig 활용
