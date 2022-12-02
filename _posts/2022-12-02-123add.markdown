@@ -47,12 +47,15 @@ tag:
 
 ## 문제풀이
 ### 문제 해결 시 고려사항
-- 1,2,3 만 사용해서 진행한다
-- 5 를 확인한다고 했을때 (4 + X) 으로 시작되는 계산식은 생략된다.
+- 1,2,3 만 사용해서 진행한다.
+
 - 1,2,3 각각에 대해서 더하게 되는 나머지 값의 구하는 방법의 갯수들을 전부 더 해주게 된다면 N 에 대한 1,2,3 으로 구할 수 있는 모든 수가 된다.
 
-![image](https://user-images.githubusercontent.com/55444587/205275842-aa45ff73-2cb0-40e1-ae15-42e67f74fe28.png)
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/55444587/205276084-dfa02d03-727f-483d-a326-582c0b4d3ad2.png">
 
+- 위의 결과에 따라 f(n) = f(n-1) + f(n-2) + f(n-3) 식이 해당 문제에서 필요함을 알 수 있다. 
+
+- 예를 들어 5 를 확인한다고 했을때 (4 + X) 으로 시작되는 계산식은 생략된다. (모든 경우의 수보다 작다)
 
 ### 코드
 <script src="https://gist.github.com/wjswjdgns/ba14ee2b21ea14c96a7552465af22f1e.js"></script>
