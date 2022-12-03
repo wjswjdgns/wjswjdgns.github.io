@@ -8,12 +8,14 @@ tag:
 
 ### 설치 및 사용
 - 가상환경 모듈 virtualenv를 설치
+
 ```
 # pip 에 virtualenv 설치
 pip install virtualenv 
 ```
 
 - 모듈 설치 후 사용하기
+
 ```
 # venv 이름으로 가상환경 생성
 virtualenv venv
@@ -29,6 +31,7 @@ virtualenv /home/user/venv --python=python3.6
 ```
 
 - 가상환경 활성 및 비활성화 하기
+
 ```
 # 가상환경이 만들어진 위치에서 bin/activate를 입력해주어야합니다.
 cd
