@@ -122,13 +122,8 @@ def detail(request, question_id):
 
 3. 데이터를 정제하여 보낸 페이지 question_detail.html 를 제작한다.
 
-```
-<h1>{{ question.subject }}</h1>
-<div>
-    {{ question.content }}
-</div>
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/55444587/205488052-d18e6c20-48a7-449e-a4d8-ece4d014ef69.png">
 
-```
 
 
 ### 오류 페이지 처리
@@ -152,5 +147,6 @@ def detail(request, question_id):
 
 ```
 
-
+## P.S
+- git page로 작업하는데 html 태그와 관련이 있는 것을 사용할 경우 에러가 나는데 정말... 답답
 
