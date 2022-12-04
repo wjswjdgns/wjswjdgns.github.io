@@ -1,5 +1,5 @@
 ---
-title:  "[python] Django 사용하기"
+title:  "[python] Django 사용하기 1편 [기본 요소]"
 tag: 
   - python
   - django
