@@ -104,12 +104,12 @@ TEMPLATES = [
 
 2. 반복
 
-```
-% for item in list %}
+<code>
+{% for item in list %}
     <p>순서: {{ forloop.counter }} </p>
     <p>{{ item }}</p>
 {% endfor %}
-```
+</code>
 
 ```
 # 루프내의 순서로 1부터 표시
@@ -129,12 +129,12 @@ forloop.last
 
 3. 객체 출력
 
-```
+<code>
 
 {{ 객체 }} #객체 출력
 {{ 객체.속성 }} # 객체 속성 값 출력
 
-```
+</code>
 
 
 ### 상세화면 만들기
