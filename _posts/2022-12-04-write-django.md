@@ -57,33 +57,9 @@ TEMPLATES = [
 
 ### 화면 만들기
 
-```
+<img width="688" alt="image" src="https://user-images.githubusercontent.com/55444587/205487868-6fbc0d96-8379-4a96-a47d-544e6a45e6ee.png">
 
-{% if question_list %}
-    <ul>
-    {% for question in question_list %}
-        <li><a href="/pybo/{{ question.id }}/">{{ question.subject }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>질문이 없습니다.</p>
-{% endif %}
-
-```
-
-```
-# question_list 가 있다면
-{% if question_list %}
-
-# question_list를 순회하며 순차적으로 하나씩 question에 대입
-{% for question in question_list %} 
-
-# for 문에 의해 대입된 question 객체의 id 번호를 출력
-{{ question.id }} 
-
-# for문에 의해 대입된 question 객체의 제목을 출력
-{{ question.subject }}	 
-```
+<img width="724" alt="image" src="https://user-images.githubusercontent.com/55444587/205487881-315b031c-2be6-47b7-a1a9-93d830a8cad9.png">
 
 
 ### 탬플릿 태그
@@ -98,31 +74,18 @@ TEMPLATES = [
 
 <img width="690" alt="image" src="https://user-images.githubusercontent.com/55444587/205487765-827a4502-4b90-4713-a811-58455b8cb577.png">
 
+<img width="383" alt="image" src="https://user-images.githubusercontent.com/55444587/205487896-58452f8f-2311-4334-a356-b32e047b7096.png">
 
-```
-# 루프내의 순서로 1부터 표시
-forloop.counter	
-
-# 루프내의 순서로 0부터 표시
-forloop.counter0	
-
-# 루프의 첫번째 순서인 경우 True
-forloop.first	
-
-# 루프의 마지막 순서인 경우 True
-forloop.last	
-
-```
 
 
 3. 객체 출력
 
-```
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/55444587/205487918-8d503975-40d2-4882-a3cc-6b1ed67b2d71.png">
 
-{{ 객체 }} #객체 출력
-{{ 객체.속성 }} # 객체 속성 값 출력
+객체에 속성이 있는 경우는 파이썬과 동일한 방법으로 도트 (.) 문자를 이용하여 표시하면 된다.
 
-```
+<img width="688" alt="image" src="https://user-images.githubusercontent.com/55444587/205487929-da3790f8-bbe0-4cb8-9d90-edb39f81459a.png">
+
 
 ### 상세화면 만들기
 
