@@ -1,15 +1,15 @@
-
-
 ---
-title:  "[python] Django 사용하기"
+title:  "[python] Django 사용하기 2편 [데이터베이스]"
 tag: 
   - python
   - django
+  - sql
 ---
 
 ### 데이터 베이스 만들기
 
 - 데이터 베이스 만들기
+
 ```
 # 기본 요소
 python manage.py migrate # 기본 데이터 베이스 만들기
@@ -184,7 +184,9 @@ a. save
 ```
 
 **서브데이터 조회하기**
+
 - 답변을 조회하는 방법은 질문과 마찬가지로 Answer의 id 값을 사용하면 된다.
+
 ```
 a = Answer.object.get(id =1) 
 
@@ -193,6 +195,4 @@ a.question # 외래키 컬럼을 불러오는 것으로 연결 되어 있는 메
 
 # 질문을 통해서 답변들 가져오기
 q.answer_set.all() #q.[연결모델명]_set 형식으로 생각하면 된다. 
-
-
 ```
