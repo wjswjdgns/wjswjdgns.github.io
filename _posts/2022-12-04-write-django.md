@@ -91,7 +91,8 @@ TEMPLATES = [
 
 1. 분기
 
-<code> 
+<pre>
+
 {% if 조건문1 %}
     <p>조건문1에 해당되는 경우</p>
 {% elif 조건문2 %}
@@ -99,17 +100,20 @@ TEMPLATES = [
 {% else %}
     <p>조건문1, 2에 모두 해당되지 않는 경우</p>
 {% endif %}
-</code>
+
+</pre>
 
 
 2. 반복
 
-<code>
+<pre>
+  
 {% for item in list %}
     <p>순서: {{ forloop.counter }} </p>
     <p>{{ item }}</p>
 {% endfor %}
-</code>
+  
+</pre>
 
 ```
 # 루프내의 순서로 1부터 표시
@@ -129,12 +133,12 @@ forloop.last
 
 3. 객체 출력
 
-<code>
+<pre>
 
 {{ 객체 }} #객체 출력
 {{ 객체.속성 }} # 객체 속성 값 출력
 
-</code>
+</pre>
 
 
 ### 상세화면 만들기
