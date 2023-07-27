@@ -1,0 +1,100 @@
+---
+title:  "[python] Django 사용하기 1편 [기본 요소]"
+tag: 
+  - python
+  - django
+---
+
+### 설치 및 사용
+- Django 설치
+
+```
+# pip 에 Django 설치
+pip install django 
+```
+
+- django 프로젝트 및 페이지 추가하기
+
+```
+# 기본 요소
+
+django-admin startproject [이름] --> django 프로젝트 생성
+django-admin startproject config . --> config 폴더 안에 전부 생성해라 
+django-admin startapp [이름] --> pybo란 이름의 앱 프로젝트 실행 (페이지 개념)
+python manage.py runserver --> 서버 구동하기
+
+```
+
+- startproject config . 을 선호하는 이유
+
+```
+C:\projects 디렉터리에서 mysite 디렉터리를 생성하지 않고 다음처럼 프로젝트를 생성하는 방법도 있다. 많은 튜토리얼들이 다음의 방법을 사용한다.
+
+(mysite) C:\projects> django-admin startproject mysite
+
+하지만 이렇게 프로젝트를 생성하면 mysite 디렉터리 밑에 똑같은 이름의 mysite 앱 디렉터리가 생성되어 mysite/mysite와 같은 구조가 되어 버린다. 단지 공부를 하기 위해서라면 큰 상관은 없겠지만 위에서 사용한 것 처럼 mysite/config 구조로 진행하는 것이 관리하기 좋을 것이다.
+```
+
+
+---
+
+- 언어를 한국어로 변경하기
+
+```
+
+--> setting.py 에서 언어를 ko-kr로 변경
+
+# Internationalization
+# https://docs.djangoproject.com/en/4.1/topics/i18n/
+
+LANGUAGE_CODE = 'ko-kr' #이 부분을 en-us 에서 ko-kr로 변경
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_TZ = True
+
+
+```
+
+- 페이지 생성 및 연결
+
+
+```
+# urls.py 연결
+# 이렇게 진행 시 파일 하나씩 계속해서 연결 해줄 필요가 있다.
+
+from django.contrib import admin
+from django.urls import path
+from pybo import views # 모듈 연결 하는 듯이 from [디렉토리] import [python 파일] 형식
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('pybo/', views.index) #path('[디렉토리]/ , [python 파일].[함수] 형식으로 연결
+]
+
+```
+
+```
+# urls 분리하기
+from django.contrib import admin
+from django.urls import path, include # include 추가
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('pybo/', include('pybo.urls')) # include 함수를 통해 pybo.urls를 추가
+]
+
+
+--> pybo 폴더에 urls.py 생성
+
+
+from django.urls import path
+from . import views #현재 폴더에서 views를 가리킨다.
+
+urlpatterns = [
+    path('', views.index)
+]
+
+```
