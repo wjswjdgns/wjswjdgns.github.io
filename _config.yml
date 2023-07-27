@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "소소하게 글 작성"
   location         : #"Somewhere"
-  email            : wjswjdgns2@gmail.com
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
