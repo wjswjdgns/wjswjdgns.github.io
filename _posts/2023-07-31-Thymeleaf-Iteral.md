@@ -57,7 +57,7 @@ public String literal(Model model) {
 
 **HTML**
 
-```java
+```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
