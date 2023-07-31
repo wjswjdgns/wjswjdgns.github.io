@@ -42,8 +42,8 @@ large'" /><br/>
 </body>
 </html>
 ```
+<img width="413" alt="Untitled" src="https://github.com/wjswjdgns/wjswjdgns.github.io/assets/55444587/f92c569d-8c3b-4da1-8be6-f3c799fa0f46">
 
-![Untitled](%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%85%E1%85%B5%E1%84%91%E1%85%B3%20-%20%E1%84%89%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%80%E1%85%A1%E1%86%B9%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%203ff939bcd7e4499cbccc210dda7de1b1/Untitled.png)
 
 **속성 설정**
 
@@ -65,7 +65,8 @@ th:* 속성을 지정하면 타임리프는 기존 속성을 th:* 로 지정한 
 
 HTML 에서는 `<input type=”checkbox” name=”activate” checked=”false” />` → 이 경우에도 checked 속성이 있기 때문에 checked 처리가 되어버린다.
 
-![Untitled](%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%85%E1%85%B5%E1%84%91%E1%85%B3%20-%20%E1%84%89%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%80%E1%85%A1%E1%86%B9%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%203ff939bcd7e4499cbccc210dda7de1b1/Untitled%201.png)
+<img width="158" alt="Untitled 1" src="https://github.com/wjswjdgns/wjswjdgns.github.io/assets/55444587/a7165cb3-1797-4455-8307-78cf69f690f2">
+
 
 HTML에서 `checked` 속성은 `checked` 속성의 값과 상관없이 `checked` 라는 속성만 있어도 체크가 된다.
 
